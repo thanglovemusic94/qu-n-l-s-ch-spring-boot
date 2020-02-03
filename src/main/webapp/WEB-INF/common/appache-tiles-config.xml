@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+    "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+    "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	
+
+	<definition name="base.definition" template="/WEB-INF/common/classic.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/common/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/common/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/common/footer.jsp" />
+		
+	</definition>
+
+	<!-- -ADMIN START -->
+	<definition name="baseadmin.definition" template="/WEB-INF/common/classicAdmin.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/common/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/common/menu.jsp" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="footer" value="/WEB-INF/common/footer.jsp" />
+	</definition>
+	
+	<definition name="homeAdminPage" extends="baseadmin.definition">
+		<put-attribute name="title" value="Home Admin Page" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/admin/indexAdmin.jsp" />
+	</definition>
+	
+	<definition name="homeAdminPage" extends="baseadmin.definition">
+		<put-attribute name="title" value="Home Admin Page" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/admin/indexAdmin.jsp" />
+	</definition>
+	
+	
+	<definition name="categoryListAdminPage" extends="baseadmin.definition">
+		<put-attribute name="title" value="Category List" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/category/categoryList.jsp" />
+	</definition>
+	
+	<definition name="createCategoryAdminPage" extends="baseadmin.definition">
+		<put-attribute name="title" value="Tạo danh mục - Admin" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/category/createCategory.jsp" />
+	</definition>
+	
+	<definition name="editCategoryAdminPage" extends="baseadmin.definition">
+		<put-attribute name="title" value="Sửa danh mục - Admin" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/category/editCategory.jsp" />
+	</definition>
+	
+	
+	
+	<definition name="bookListAdminPage" extends="baseadmin.definition">
+		<put-attribute name="title" value="Book List - Admin" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/book/bookList.jsp" />
+	</definition>
+
+	<definition name="createBookAdminPage" extends="baseadmin.definition">
+		<put-attribute name="title" value="Tạo sách- Admin" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/book/createBook.jsp" />
+	</definition>
+	
+	<definition name="editBookAdminPage" extends="baseadmin.definition">
+		<put-attribute name="title" value="Sửa sách - Admin" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/book/editBook.jsp" />
+	</definition>
+	
+	
+	
+	<definition name="managerListAdminPage" extends="baseadmin.definition">
+		<put-attribute name="title" value="Manager List" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/manager/managerList.jsp" />
+	</definition>
+	
+	<definition name="createManagerAdminPage" extends="baseadmin.definition">
+		<put-attribute name="title" value="Tạo manager - Admin" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/manager/createManager.jsp" />
+	</definition>
+	
+	<definition name="editManagerAdminPage" extends="baseadmin.definition">
+		<put-attribute name="title" value="Sửa manager - Admin" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/manager/editManager.jsp" />
+	</definition>
+	
+</tiles-definitions>

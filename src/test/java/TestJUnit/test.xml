@@ -1,0 +1,15 @@
+
+
+<suite name="Sample Suite">
+	<test name="testing">
+		<groups>
+			<run>
+				<include name="Luong"/>
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="TestJUnit.JUnitCategory"/>
+		</classes>
+	</test>
+</suite>
