@@ -31,7 +31,6 @@ import com.springboot.vo.CategoryVo;
 import com.springboot.vo.ManagerVo;
 
 @Controller
-@RequestMapping(value = "/admin")
 public class AdminController {
 
 	@Autowired
@@ -82,7 +81,7 @@ public class AdminController {
 		if (success) {
 			categoryService.createCategory(vo);
 			redirectAttributes.addFlashAttribute("msg", "Đã thêm danh mục thành công!");
-			return new ModelAndView("redirect:/admin/category");
+			return new ModelAndView("redirect:/category");
 		}
 		return new ModelAndView("createCategoryAdminPage");
 	}
@@ -102,7 +101,7 @@ public class AdminController {
 		if (success) {
 			managerService.createManager(vo);
 			redirectAttributes.addFlashAttribute("msg", "Đã thêm quản lý thành công!");
-			return new ModelAndView("redirect:/admin/manager");
+			return new ModelAndView("redirect:/manager");
 		}
 		return new ModelAndView("createManagerAdminPage");
 	}
@@ -114,7 +113,7 @@ public class AdminController {
 		String message = result == true ? "Đã xóa thành công!" : "Xóa thất bại!";
 		redirectAttributes.addFlashAttribute("msg", message);
 
-		return new RedirectView("/admin/category", true);
+		return new RedirectView("/category", true);
 	}
 	
 	// Xóa quản lý
@@ -124,7 +123,7 @@ public class AdminController {
 			String message = result == true ? "Đã xóa thành công!" : "Xóa thất bại!";
 			redirectAttributes.addFlashAttribute("msg", message);
 
-			return new RedirectView("/admin/manager", true);
+			return new RedirectView("/manager", true);
 		}
 
 	// Sửa danh mục
@@ -143,7 +142,7 @@ public class AdminController {
 		if (success) {
 			categoryService.updateCategory(vo);
 			redirectAttributes.addFlashAttribute("msg", "Đã sửa danh mục thành công!");
-			return new ModelAndView("redirect:/admin/category");
+			return new ModelAndView("redirect:/category");
 		}
 
 		return new ModelAndView("editCategoryAdminPage");
@@ -165,7 +164,7 @@ public class AdminController {
 			if (success) {
 				managerService.updateManager(vo);
 				redirectAttributes.addFlashAttribute("msg", "Đã sửa thông tin quản lý thành công!");
-				return new ModelAndView("redirect:/admin/manager");
+				return new ModelAndView("redirect:/manager");
 			}
 
 			return new ModelAndView("editManagerAdminPage");
@@ -224,7 +223,7 @@ public class AdminController {
 				e.printStackTrace();
 				redirectAttributes.addFlashAttribute("msg", "Thêm sách thật bại!");
 			}
-			return "redirect:/admin/book";
+			return "redirect:/book";
 		}
 	}
 
@@ -278,7 +277,7 @@ public class AdminController {
 			e.printStackTrace();
 			redirectAttributes.addFlashAttribute("msg", "Sửa sách thật bại!");
 		}
-		return "redirect:/admin/book";
+		return "redirect:/book";
 	}
 
 }

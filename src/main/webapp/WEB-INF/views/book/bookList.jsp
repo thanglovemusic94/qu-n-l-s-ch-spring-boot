@@ -10,7 +10,7 @@
 	<script src="/js/datatable.js"></script>
     <div id="rightContent">
     <h3 style="color: goldenrod; font-size: 32px; font-weight: bold">Cập nhật sách</h3>
-    <a href="${pageContext.request.contextPath}/admin/book/create" style="float: right; font-weight: bold; margin-bottom: 10px;margin-right: 40px;margin-top: 10px">Thêm sách</a>
+    <a href="${pageContext.request.contextPath}/book/create" style="float: right; font-weight: bold; margin-bottom: 10px;margin-right: 40px;margin-top: 10px">Thêm sách</a>
     	<div style="color: red; font-style: italic;">
 			${msg}
 		</div>
@@ -39,8 +39,8 @@
                             <td class="data"  style="text-align: center">${book.nxb}</td>
                             <td class="data"  style="text-align: center">${book.ngay}</td>
                             <td class="data"  style="text-align: center" width="250px">${book.chitiet}</td>
-                            <td class="data" width="40px" style="text-align: center""><a href="${pageContext.request.contextPath}/admin/book/edit/${book.id}" style="color: blue;font-weight: bold;">Sửa</a></td>
-                       		<td class="data" width="40px" style="text-align: center"><a href="${pageContext.request.contextPath}/admin/book/delete/${book.id}" style="color: red; font-weight: bold;">Xóa</a></td>
+                            <td class="data" width="40px" style="text-align: center""><a href="${pageContext.request.contextPath}/book/edit/${book.id}" style="color: blue;font-weight: bold;">Sửa</a></td>
+                       		<td class="data" width="40px" style="text-align: center"><a href="${pageContext.request.contextPath}/book/delete/${book.id}" style="color: red; font-weight: bold;">Xóa</a></td>
                         </tr>
                         </c:forEach>
                     </table>
@@ -49,7 +49,7 @@
                
 						<ul>
 							<c:forEach  begin="1" end="${totalPage}" varStatus="status" >
-							<li><a href="${pageContext.request.contextPath}/admin/book/page/${status.count}">${status.count}</a></li>
+							<li><a href="${pageContext.request.contextPath}/book/page/${status.count}">${status.count}</a></li>
 							</c:forEach>
 						</ul>
 					</div>

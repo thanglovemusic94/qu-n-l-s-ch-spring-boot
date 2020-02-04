@@ -4,7 +4,7 @@
 
   <div id="rightContent">
     <h3 style="color: goldenrod; font-size: 32px; font-weight: bold">Trang chủ Manager</h3>
-   <a href="${pageContext.request.contextPath}/admin/manager/create" style="float: right; font-weight: bold; margin-bottom: 10px;margin-right: 40px;margin-top: 10px">Thêm manager</a>
+   <a href="${pageContext.request.contextPath}/manager/create" style="float: right; font-weight: bold; margin-bottom: 10px;margin-right: 40px;margin-top: 10px">Thêm manager</a>
    <div style="color: red; font-style: italic;">
 	${msg}
 </div>
@@ -31,8 +31,8 @@
                             <td class="data"  style="text-align: center">${manager.email}</td>
                             <td class="data"  style="text-align: center">${manager.sdt}</td>
                             <td class="data"  style="text-align: center">${manager.diachi}</td>
-                            <td class="data" width="70px" style="text-align: center""><a href="${pageContext.request.contextPath}/admin/manager/edit/${manager.id}" style="color: blue;font-weight: bold;">Sửa</a></td>
-                       		<td class="data" width="70px" style="text-align: center"><a href="${pageContext.request.contextPath}/admin/manager/delete/${manager.id}" style="color: red; font-weight: bold;">Xóa</a></td>
+                            <td class="data" width="70px" style="text-align: center""><a href="${pageContext.request.contextPath}/manager/edit/${manager.id}" style="color: blue;font-weight: bold;">Sửa</a></td>
+                       		<td class="data" width="70px" style="text-align: center"><a href="${pageContext.request.contextPath}/manager/delete/${manager.id}" style="color: red; font-weight: bold;">Xóa</a></td>
                         </tr>
                         </c:forEach>
                     </table>

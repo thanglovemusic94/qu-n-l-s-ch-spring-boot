@@ -6,9 +6,9 @@
 <div class="clear"></div>
 <div id="leftBar" >
 	<ul>
-            <li><a href="${pageContext.request.contextPath}/admin/">Trang chủ</a></li>
-            <li><a href="${pageContext.request.contextPath}/admin/category">Danh mục</a></li>
-            <li><a href="${pageContext.request.contextPath}/admin/book">Sách</a></li>
+            <li><a href="${pageContext.request.contextPath}/">Trang chủ</a></li>
+            <li><a href="${pageContext.request.contextPath}/category">Danh mục</a></li>
+            <li><a href="${pageContext.request.contextPath}/book">Sách</a></li>
            
 	</ul>
 	</div>

@@ -17,7 +17,7 @@
 	<div class="msg">${msg}</div>
 
 	<form:form modelAttribute="managerVo"
-		action="${pageContext.request.contextPath}/admin/manager/create"
+		action="${pageContext.request.contextPath}/manager/create"
 		method="POST">
 		<table width="95%" style="margin-left: 200px">
 			<br />

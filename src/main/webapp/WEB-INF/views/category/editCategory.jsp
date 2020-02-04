@@ -14,7 +14,7 @@
 
 	<div class="msg">${msg}</div>
 	<form:form modelAttribute="categoryVo"
-		action="${pageContext.request.contextPath}/admin/category/edit" method = "POST">
+		action="${pageContext.request.contextPath}/category/edit" method = "POST">
 		<table width="95%" style="margin-left: 200px">
 
 			<tr>

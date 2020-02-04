@@ -8,7 +8,7 @@
                     <h3 style="color: goldenrod; font-size: 32px; font-weight: bold">Sửa thông tin sách</h3>
                     <br/>
 					<div class="msg">${msg}</div>
-                    <form:form modelAttribute="bookVo" action="${pageContext.request.contextPath}/admin/book/edit" method="POST"
+                    <form:form modelAttribute="bookVo" action="${pageContext.request.contextPath}/book/edit" method="POST"
                     	 enctype="multipart/form-data"
                     >
                    

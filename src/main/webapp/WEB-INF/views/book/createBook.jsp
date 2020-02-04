@@ -8,7 +8,7 @@
                     <h3 style="color: goldenrod; font-size: 32px; font-weight: bold">Thêm sách</h3>
                     <br/>
 					<div style="color: red; font-style: italic;">${msg}</div>
-                    <form:form modelAttribute="bookVo" action="${pageContext.request.contextPath}/admin/book/create" method="POST" enctype="multipart/form-data">
+                    <form:form modelAttribute="bookVo" action="${pageContext.request.contextPath}/book/create" method="POST" enctype="multipart/form-data">
                    
                     <table width="95%" style="margin-left: 130px">
                         <tr><td width="125px"><b>Tên sách</b></td><td>

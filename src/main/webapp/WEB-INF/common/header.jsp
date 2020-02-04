@@ -7,7 +7,7 @@
 	<div class="inHeader">
 	<img src="${pageContext.request.contextPath}/images/sach.png" class="inHeader1" style="margin-left: -600px;margin-top: -13px"/>
 		<div class="mosAdmin">
-		<form:form action ="${pageContext.request.contextPath}/admin/" method="POST" modelAttribute="user">
+		<form:form action ="${pageContext.request.contextPath}/" method="POST" modelAttribute="user">
 		Xin chào, Administration<br>
 		<a href="">Trợ giúp</a> | <a href="${pageContext.request.contextPath}/login">Đăng xuất</a>
 		</form:form>
